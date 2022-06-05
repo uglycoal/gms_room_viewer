@@ -6,9 +6,9 @@ function file_get_contents(file_name) {
 	buffer_delete(b);
 	return r;
 }
-function file_set_contents(file_name, val) {
-	var s = file_name, v = val;
-	var b = buffer_create(string_byte_length(v), buffer_grow, 1);
-	buffer_write(b, buffer_text, v);
-	buffer_save_ext(b, s, 0, buffer_tell(b));
-}
+//function file_set_contents(file_name, val) {
+//	var s = file_name, v = val;
+//	var b = buffer_create(string_byte_length(v), buffer_grow, 1);
+//	buffer_write(b, buffer_text, v);
+//	buffer_save_ext(b, s, 0, buffer_tell(b));
+//}
